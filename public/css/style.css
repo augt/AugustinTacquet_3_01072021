@@ -1,3 +1,17 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
 
+h1, h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+.index__header {
+  display: flex;
+  justify-content: center;
+}
+.index__header h1 {
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
