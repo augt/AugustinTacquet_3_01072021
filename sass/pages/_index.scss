@@ -8,14 +8,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $location__banner--text-color;
+    color: $dark-grey;
     margin-top: -10px;
-    box-shadow: inset 0px 15px 5px -15px rgb(0 0 0 / 50%);
+    box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
     .location__icon{
         margin-right: 20px;
         margin-left: -30px;
     }
+}
 
+.explore__section
+{
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-grey;
+    h2{
+        font-family: $font-text;
+        width: 80%;
+        margin-bottom: 0;
+    }
+    p {
+        color: $grey;
+        width: 100%;
+        font-size: 1.15em;
+        margin-bottom: 30px;
+    }
 }
 
 
