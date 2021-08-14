@@ -1,6 +1,11 @@
 .index__header{
     display: flex;
     justify-content: center;
+
+    h1{
+        position: unset;
+        left: unset;
+    }
 }
 
 .location__banner{

@@ -28,8 +28,21 @@ body {
   cursor: pointer;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header a {
+  position: absolute;
+  left: 5%;
+  font-size: 1.2em;
+}
 header h1 {
   margin: 20px 0 5px 0;
+  position: relative;
+  left: -7.5px;
 }
 
 footer {
@@ -60,6 +73,10 @@ footer a:hover {
 .index__header {
   display: flex;
   justify-content: center;
+}
+.index__header h1 {
+  position: unset;
+  left: unset;
 }
 
 .location__banner {
