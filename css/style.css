@@ -43,6 +43,7 @@ header h1 {
   margin: 20px 0 5px 0;
   position: relative;
   left: -7.5px;
+  font-weight: unset;
 }
 
 footer {
@@ -55,6 +56,7 @@ footer {
 footer h2 {
   font-size: 1.1em;
   margin-top: 0px;
+  font-weight: unset;
 }
 footer a {
   margin-bottom: 5px;
@@ -68,6 +70,11 @@ footer a .fa-hands-helping {
 }
 footer a:hover {
   color: #9356DC;
+}
+
+.menu__picture img {
+  height: 255px;
+  object-fit: cover;
 }
 
 .index__header {
@@ -190,11 +197,9 @@ footer a:hover {
 .restaurants__section .restaurant__card__description div p {
   margin: 5px 0px 20px 15px;
 }
-.restaurants__section .restaurant__card__description .index__button--like {
+.restaurants__section .restaurant__card__description i {
   margin: auto;
   font-size: 1.5em;
-  border: none;
-  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
