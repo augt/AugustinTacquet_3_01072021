@@ -6,5 +6,8 @@
     color: white;
     font-size: 1.05em;
     box-shadow: $box-shadow;
+    &:hover{
+        cursor: pointer;
+    }
  }
 
