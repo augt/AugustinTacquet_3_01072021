@@ -73,11 +73,15 @@ main{
                 justify-content: space-between;
                 margin-bottom: 15px;
                 box-shadow: $box-shadow;
+                &:hover
+                {
+                    cursor: pointer;
+                }
                 
 
                 &__item{
                     margin-left:10px;
-                    width: 75%;
+                    min-width: 75%;
                     
                     
                     &__name{
@@ -101,10 +105,11 @@ main{
                 .price{
                     display: flex;
                     align-items: flex-end;
+                    font-weight: bold;
 
                     p{
                         padding-right: 20px;
-                        padding-left: 20px;
+                        padding-left: 15px;
         
                     }
 
