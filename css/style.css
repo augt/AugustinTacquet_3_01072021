@@ -15,19 +15,6 @@ body {
   margin: 0;
 }
 
-.button--big {
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  padding: 15px 20px;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  font-size: 1.05em;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-}
-.button--big:hover {
-  cursor: pointer;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -85,14 +72,18 @@ main {
 
 .menu__section {
   background-color: #f6f6f6;
-  padding: 20px 5%;
+  padding: 20px 5% 40px 5%;
   margin-top: -40px;
   border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .menu__section .restaurant__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .menu__section .restaurant__title h2 {
   font-size: 1.7em;
@@ -106,9 +97,25 @@ main {
 .menu__section .restaurant__title i:hover {
   cursor: pointer;
 }
+.menu__section .menu__cards__bloc {
+  padding-bottom: 10px;
+}
+.menu__section .menu__cards__bloc .menu__cards__group {
+  margin-bottom: 35px;
+}
 .menu__section .menu__cards__bloc .menu__cards__group h3 {
   text-transform: uppercase;
   font-weight: 300;
+  position: relative;
+}
+.menu__section .menu__cards__bloc .menu__cards__group h3::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #99E2D0;
+  left: 0px;
+  bottom: -8px;
+  position: absolute;
 }
 .menu__section .menu__cards__bloc .menu__cards__group .menu__card {
   background-color: white;
@@ -144,6 +151,20 @@ main {
 .menu__section .menu__cards__bloc .menu__cards__group .menu__card .price p {
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.button--big {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  padding: 15px 40px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 1.05em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+.button--big:hover {
+  cursor: pointer;
 }
 
 .index__header {
@@ -186,6 +207,9 @@ main {
   width: 100%;
   font-size: 1.15em;
   margin-bottom: 30px;
+}
+.explore__section .button--big {
+  padding: 15px 20px;
 }
 
 .functioning__section {
