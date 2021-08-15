@@ -1,4 +1,7 @@
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 .menu__picture{
     
@@ -11,8 +14,84 @@
 
 .menu__section{
     background-color: $background-grey;
-    padding: 40px 0 ;
+    padding: 20px 5% ;
     margin-top: -40px;
-    border-radius: 50px 50px 0 0;
+    border-radius: 40px 40px 0 0;
+
+    .restaurant__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-size: 1.7em;
+            font-weight: unset;
+            margin-top: 10px;
+        }
+        
+        i{
+            font-size: 1.5em;
+            margin-right: 5%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu__cards__bloc{
+
+        .menu__cards__group{
+
+            h3{
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+
+            .menu__card{
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                box-shadow: $box-shadow;
+                
+
+                &__item{
+                    margin-left:10px;
+                    width: 75%;
+                    
+                    
+                    &__name{
+                        margin-bottom: 0px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    &__teaser{
+                        margin-top: 5px;
+                        font-weight: 300;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 0.9em;
+                       
+                    }
+                }
+
+                .price{
+                    display: flex;
+                    align-items: flex-end;
+
+                    p{
+                        padding-right: 20px;
+                        padding-left: 20px;
+        
+                    }
+
+                }
+            }
+        }
+    }
 
 }
