@@ -1,0 +1,5 @@
+@mixin tablets-desktops {
+    @media (min-width: 900px) {
+        @content ;
+      }
+  }

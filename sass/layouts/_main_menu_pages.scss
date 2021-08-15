@@ -46,10 +46,18 @@ main{
 
         padding-bottom: 10px;
 
+        @include tablets-desktops {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .menu__cards__group{
 
             margin-bottom: 35px;
-            
+
+            @include tablets-desktops {
+                width: 32%;
+            }
 
             h3{
                 text-transform: uppercase;

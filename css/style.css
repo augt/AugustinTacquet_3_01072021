@@ -100,8 +100,19 @@ main {
 .menu__section .menu__cards__bloc {
   padding-bottom: 10px;
 }
+@media (min-width: 900px) {
+  .menu__section .menu__cards__bloc {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu__section .menu__cards__bloc .menu__cards__group {
   margin-bottom: 35px;
+}
+@media (min-width: 900px) {
+  .menu__section .menu__cards__bloc .menu__cards__group {
+    width: 32%;
+  }
 }
 .menu__section .menu__cards__bloc .menu__cards__group h3 {
   text-transform: uppercase;
@@ -225,6 +236,12 @@ main {
 .functioning__section .functioning__cards__bloc {
   padding-left: 10px;
 }
+@media (min-width: 900px) {
+  .functioning__section .functioning__cards__bloc {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .functioning__section .functioning__cards__bloc .functioning__card {
   display: flex;
   align-items: center;
@@ -233,6 +250,11 @@ main {
   margin-bottom: 20px;
   padding: 10px 0px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 900px) {
+  .functioning__section .functioning__cards__bloc .functioning__card {
+    width: 30%;
+  }
 }
 .functioning__section .functioning__cards__bloc .functioning__card span {
   margin-left: -10px;
@@ -256,16 +278,35 @@ main {
   padding: 40px 5%;
   background-color: #f6f6f6;
 }
+@media (min-width: 900px) {
+  .restaurants__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .restaurants__section h2 {
   font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .restaurants__section a {
+    width: 47%;
+    margin-bottom: 30px;
+  }
 }
 .restaurants__section .restaurant__card {
   background-color: white;
   border-radius: 15px;
   width: 100%;
-  margin-bottom: 30px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   position: relative;
+  margin-bottom: 20px;
+}
+@media (min-width: 900px) {
+  .restaurants__section .restaurant__card {
+    margin-bottom: 0;
+  }
 }
 .restaurants__section .restaurant__card img {
   width: 100%;
