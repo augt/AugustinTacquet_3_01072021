@@ -68,6 +68,14 @@
             margin-bottom: 20px;
             padding: 10px 0px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+            transition: 300ms;
+            &:hover{
+                background-color: #f3f1ff;
+                i{
+                    color: $color-primary;
+                }
+                
+            }
             @include tablets-desktops {
                 width: 30% ;
             };
@@ -85,6 +93,7 @@
                 margin: 0 5px;
                 font-size: 1.1em;
                 color: $grey;
+                transition: 300ms;
             }
 
             p{
