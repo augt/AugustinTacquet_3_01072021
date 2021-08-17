@@ -132,40 +132,56 @@ main {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 15px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 100%;
 }
 .menu__section .menu__cards__bloc .menu__cards__group .menu__card:hover {
   cursor: pointer;
 }
-.menu__section .menu__cards__bloc .menu__cards__group .menu__card__item {
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .menu__card__item {
   margin-left: 10px;
-  min-width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.menu__section .menu__cards__bloc .menu__cards__group .menu__card__item__name {
-  margin-bottom: 0px;
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .menu__card__item__name {
   font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.menu__section .menu__cards__bloc .menu__cards__group .menu__card__item__teaser {
-  margin-top: 5px;
-  font-weight: 300;
-  white-space: nowrap;
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .menu__card__item__name p {
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .menu__card__item__teaser {
+  font-weight: 300;
   font-size: 0.9em;
 }
-.menu__section .menu__cards__bloc .menu__cards__group .menu__card .price {
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .menu__card__item__teaser p {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card__element .price {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+  margin-right: 20px;
+  margin-left: 15px;
 }
-.menu__section .menu__cards__bloc .menu__cards__group .menu__card .price p {
-  padding-right: 20px;
-  padding-left: 15px;
+.menu__section .menu__cards__bloc .menu__cards__group .menu__card .checkbox {
+  background-color: #99E2D0;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: none;
 }
 
 .button--big {
