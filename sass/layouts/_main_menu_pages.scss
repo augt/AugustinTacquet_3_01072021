@@ -257,4 +257,40 @@ main{
     }
 }
 
+/* heart animation*/
+.heart{
+    position: relative;
 
+
+    .fas.fa-heart{
+        background: linear-gradient($color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+        position: absolute;
+        top: -5px;
+        transform: scale(0);
+        transform-origin: bottom;
+        transition: 0.3s;
+        z-index: 1;
+        
+    }
+    .far.fa-heart{
+        position: relative;
+        top:-5px;
+        transition: 0.5s;
+        z-index:2;
+        &:hover{
+            opacity: 0;
+        }
+        
+        &:hover + .fas.fa-heart{
+            transform: scale(1);
+            
+        }
+    }
+
+    
+
+
+    
+}
