@@ -138,7 +138,7 @@ main{
                     height: 100%;
                     display: flex;
                     padding: 0 15px;
-                    transform: scaleX(0%);
+                    transform: scaleX(0);
                     
 
                     i{
@@ -210,16 +210,16 @@ main{
             transform: scaleX(0);
     }
     100% {
-            transform: scaleX(100%);
+            transform: scaleX(1);
     }
 }
 
 @keyframes slide-back{
     0% {
-        transform: scaleX(100%);
+        transform: scaleX(1);
 }
 100% {
-        transform: scaleX(0%);
+        transform: scaleX(0);
     }
 }
 @keyframes rotate {
