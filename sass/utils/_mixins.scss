@@ -3,3 +3,8 @@
         @content ;
       }
   }
+
+@mixin darker ($color) {
+    $color: darken($color, 40%);
+    color: $color;
+}
